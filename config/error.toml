@@ -1,0 +1,205 @@
+# 基本错误：范围0x0 - 0xff
+[[definitions]]
+id = 0x0
+code = "SUCCESS"
+    [definitions.i18n.0]
+    en_US = ["Succeed", "Succeed"]
+    zh_CN = ["成功", "成功"]
+[[definitions]]
+id = 0x1
+code = "FAILED"
+    [definitions.i18n.0]
+    en_US = ["Faild", "Faild"]
+    zh_CN = ["失败", "失败"]
+[[definitions]]
+id = 0x2
+code = "SUB_ERROR"
+    [definitions.i18n.0]
+    en_US = ["Sub Error", "Got sub error: {errmsg}"]
+    zh_CN = ["发现子错误", "子错误: {errmsg}"]
+
+[[definitions]]
+id = 0x3
+code = "BUSY"
+    [definitions.i18n.0]
+    en_US = ["Service Busy", "Service is busy. Please try it later"]
+    zh_CN = ["服务忙", "当前服务忙，请稍后重试。"]
+[[definitions]]
+id = 0x4
+code = "TIMEOUT"
+    [definitions.i18n.0]
+    en_US = ["Service Timeout", "Service is timeout"]
+    zh_CN = ["服务超时", "服务已超时。"]
+[[definitions]]
+id = 0x5
+code = "UNKNOWN_ERROR"
+    [definitions.i18n.0]
+    en_US = ["Unknown Error", "Unknown error. Please contact to administrator"]
+    zh_CN = ["未知错误", "发生未知错误，请联系管理员。"]
+[[definitions]]
+id = 0x6
+code = "UNDEFINED_ERROR"
+    [definitions.i18n.0]
+    en_US = ["Undefined Error", "Undefined error. Please contact to administrator"]
+    zh_CN = ["未定义的错误", "发生未定义的错误，请联系管理员。"]
+[[definitions]]
+id = 0x7
+code = "NOT_IMPLEMENTED"
+    [definitions.i18n.0]
+    en_US = ["Not Implemented", "Serivice isn't implemented"]
+    zh_CN = ["未实现", "服务未实现。"]
+[[definitions]]
+id = 0x8
+code = "UNSUPPORTED"
+    [definitions.i18n.0]
+    en_US = ["Unsupported", "Service is unsupported"]
+    zh_CN = ["不支持", "不支持该服务。"]
+
+# 系统相关的错误：范围0x100 - 0x1ff
+[[definitions]]
+id = 0x100
+code = "ERR_SYS"
+    [definitions.i18n.0]
+    en_US = ["System Error", "Got system error: {errmsg}"]
+    zh_CN = ["系统错误", "发生系统错误: {errmsg}"]
+
+# 参数相关的错误：范围0x200 - 0x2ff
+[[definitions]]
+id = 0x200
+code = "ERR_ARG"
+    [definitions.i18n.0]
+    en_US = ["Argument Error", "Got argument error: {errmsg}"]
+    zh_CN = ["参数错误", "参数错误: {errmsg}"]
+[[definitions]]
+id = 0x201
+code = "ERR_ARG_CANNOT_EMPTY"
+    [definitions.i18n.0]
+    en_US = ["Argument Can't Empty", "Argument '{parameter_name}' cann't be empty"]
+    zh_CN = ["参数不可为空", "参数'{parameter_name}'不能为空"]
+    [definitions.param.parameter_name]
+    en_US = "Parameter Name"
+    zh_CN = "参数名"
+
+# 参数相关的错误：范围0x200 - 0x2ff
+[[definitions]]
+id = 0x300
+code = "ERR_FORM"
+    [definitions.i18n.0]
+    en_US = ["Form Error", "Got form error: {errmsg}"]
+    zh_CN = ["表单错误", "表单错误: {errmsg}"]
+
+# 配置相关的错误：范围0x400 - 0x4ff
+[[definitions]]
+id = 0x400
+code = "ERR_CONFIG"
+    [definitions.i18n.0]
+    en_US = ["Configure Error", "Got configuration error: {errmsg}"]
+    zh_CN = ["配置错误", "配置错误: {errmsg}"]
+
+# 认证相关的错误：范围0x500 - 0x5ff
+[[definitions]]
+id = 0x500
+code = "ERR_AUTH"
+    [definitions.i18n.0]
+    en_US = ["Authorization Error", "Got authorization error: {errmsg}"]
+    zh_CN = ["认证错误", "认证错误: {errmsg}"]
+[[definitions]]
+id = 0x501
+code = "ERR_AUTH_UNAUTHORIZED"
+    [definitions.i18n.0]
+    en_US = ["Unauthorized", "Unauthorized"]
+    zh_CN = ["未鉴权", "未鉴权"]
+[[definitions]]
+id = 0x502
+code = "ERR_AUTH_FORBIDDEN"
+    [definitions.i18n.0]
+    en_US = ["Forbidden", "Forbidden"]
+    zh_CN = ["访问禁止", "访问禁止"]
+[[definitions]]
+id = 0x503
+code = "ERR_AUTH_TOKEN_NOT_ACTIVE"
+    [definitions.i18n.0]
+    en_US = ["Token Not Active", "Token is not active"]
+    zh_CN = ["令牌未激活", "令牌未激活"]
+[[definitions]]
+id = 0x504
+code = "ERR_AUTH_TOKEN_TIMEOUT"
+    [definitions.i18n.0]
+    en_US = ["Token Timeout", "Token is time out"]
+    zh_CN = ["令牌已超时", "令牌已超时"]
+[[definitions]]
+id = 0x505
+code = "ERR_AUTH_TOKEN_INVALID_ISSUER"
+    [definitions.i18n.0]
+    en_US = ["Invalid Token Issuer", "Token issuer '{issuer_name}' is invalid or untrusted."]
+    zh_CN = ["无效的令牌颁发者", "令牌颁发者'{issuer_name}'无效或者不受信任"]
+    [definitions.param.issuer_name]
+    zh_CN = "令牌颁发者"
+[[definitions]]
+id = 0x506
+code = "ERR_AERR_TOKEN_FORMAT_WRONG"
+    [definitions.i18n.0]
+    en_US = ["Token Format Wrong", "Token format is wrong"]
+    zh_CN = ["令牌格式错误", "令牌格式错误"]
+[[definitions]]
+id = 0x507
+code = "ERR_AUTH_TOKEN_SIGNATURE_WRONG"
+    [definitions.i18n.0]
+    en_US = ["Token Signature Wrong", "Token signature is wrong"]
+    zh_CN = ["令牌签名错误", "令牌签名错误"]
+
+# 用户相关的错误：范围0x600 - 0x6ff
+[[definitions]]
+id = 0x600
+code = "ERR_USER"
+    [definitions.i18n.0]
+    en_US = ["User Error", "Got user error: {errmsg}"]
+    zh_CN = ["用户错误", "用户错误: {errmsg}"]
+
+# 数据库相关的错误：范围0x700 - 0x7ff
+[[definitions]]
+id = 0x700
+code = "ERR_DB"
+    [definitions.i18n.0]
+    en_US = ["Database Error", "Got database error: {errmsg}"]
+    zh_CN = ["数据库错误", "数据库错误: {errmsg}"]
+
+# 消息队列相关的错误：范围0x800 - 0x8ff
+[[definitions]]
+id = 0x800
+code = "ERR_MQ"
+    [definitions.i18n.0]
+    en_US = ["Message Queue Error", "Got message queue error: {errmsg}"]
+    zh_CN = ["消息队列错误", "消息队列错误: {errmsg}"]
+
+# 字段相关的错误：范围0x900 - 0x9ff
+[[definitions]]
+id = 0x900
+code = "ERR_DICT"
+    [definitions.i18n.0]
+    en_US = ["Dictionary Error", "Got dictionary error: {errmsg}"]
+    zh_CN = ["数据字典错误", "数据字典错误: {errmsg}"]
+
+# 网络相关的错误：范围0x1000 - 0x10ff
+[[definitions]]
+id = 0x1000
+code = "ERR_NETWORK"
+    [definitions.i18n.0]
+    en_US = ["Network Error", "Got network error: {errmsg}"]
+    zh_CN = ["网络错误", "网络错误: {errmsg}"]
+
+# 输入输出相关的错误：范围0x1100 - 0x11ff
+[[definitions]]
+id = 0x1100
+code = "ERR_IO"
+    [definitions.i18n.0]
+    en_US = ["I/O Error", "Got io error: {errmsg}"]
+    zh_CN = ["输入输出错误", "输入输出错误: {errmsg}"]
+
+# 业务的错误码段，范围0x10000 - 0xfffff
+[[definitions]]
+id = 0x10000
+code = "ERR_BUSINESS"
+    [definitions.i18n.0]
+    en_US = ["Businness Error", "Got business error: {errmsg}"]
+    zh_CN = ["业务错误", "业务错误: {errmsg}"]
